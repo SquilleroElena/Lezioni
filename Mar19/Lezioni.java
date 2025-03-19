@@ -7,7 +7,9 @@ public class Lezioni {
         int giorno = Integer.parseInt(divisione[0]);
         String mese = divisione[1].toLowerCase();
 
-        if (mese.equals("gennaio")) {
+        if (giorno < 0) {
+            System.out.println("Il giorno non esiste");
+        } else if (mese.equals("gennaio")) {
             if (giorno > 31) {
                 System.out.println("La data non esiste");
             } else {
