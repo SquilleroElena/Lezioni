@@ -15,13 +15,14 @@ public class Vacanze {
     }
 
     public void mostraGiorniVacanze() {
-        if (anniDiServizio > giorni.length - 1) {
-            System.out.println(
-                    "Gli anni di servisio sono stati: " + anniDiServizio + " -> i giorni di vanacaza sono quindi: 25");
+        
+        if (anniDiServizio < 0){
+            System.out.println("Il numero inserito non è corretto");
+        } else if (anniDiServizio > giorni.length - 1) {
+            System.out.println("Gli anni di servisio sono stati: " + anniDiServizio + " -> i giorni di vanacaza sono quindi: 25");
         } else {
             System.out.println(
-                    "Gli anni di servisio sono stati: " + anniDiServizio + " -> i giorni di vanacaza sono quindi: "
-                            + giorni[anniDiServizio]);
+                    "Gli anni di servisio sono stati: " + anniDiServizio + " -> i giorni di vanacaza sono quindi: " + giorni[anniDiServizio]);
         }
     }
 
