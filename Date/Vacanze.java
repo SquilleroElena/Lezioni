@@ -5,8 +5,13 @@ public class Vacanze {
     public int[] giorni;
 
     public void setVacanze() {
-        this.anni = new int[] { 0, 1, 4, 6 };
-        this.giorni = new int[] { 10, 15, 20, 25 };
+        giorni = new int[6];
+        giorni[0] = 10;
+        giorni[1] = 15;
+        giorni[2] = 15;
+        giorni[3] = 15;
+        giorni[4] = 20;
+        giorni[5] = 20;
     }
 
     public void mostraGiorniVacanze() {
